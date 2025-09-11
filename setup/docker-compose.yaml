@@ -1,5 +1,3 @@
-version: '3.8'
-
 networks:
   lfs261:
     driver: bridge
@@ -10,7 +8,6 @@ volumes:
 
 services:
   jenkins: 
-    image: jenkins/jenkins 
     build:
       context: .
       dockerfile: Dockerfile
